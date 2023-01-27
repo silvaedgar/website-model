@@ -1,0 +1,287 @@
+:root {
+    /*========== Colors ==========*/
+    --backgroundcolor-navbar: #17a2b8;
+    --backgroundcolor-sidebar: #1E88E5;
+    /* --backgroundcolor-content: blue; */
+    --backgrouncolor-body: blue;
+    --fuente: 16px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.bar {
+    display: inline-block;
+    float: left;
+    margin: 3px 0px 0 0;
+}
+
+.bnt-lightblue {
+    color: lightblue;
+}
+
+/* --------------------------------------
+Elementos del NAV
+ -------------------------------------- */
+.my__nav {
+    width: 100%;
+    height: 10%;
+    background-color: var(--backgroundcolor-navbar);
+    box-shadow: 0px 5px 5px 0px lightcyan;
+    line-height: 42px;
+}
+
+.nav__item {
+    display: none;
+}
+
+.span__profile,
+.image__profile {
+    display: none;
+}
+
+.collapse__ul-profile {
+    display: none;
+}
+
+/* -----------------------------------------------------------------
+Elementos de la Barra Lateral
+-------------------------------------------------------------------------- */
+.sidebar {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: var(--backgroundcolor-sidebar);
+    height: 100vh;
+    top: 0;
+    overflow: auto;
+    z-index: 8;
+}
+
+.header__sidebar {
+    height: auto;
+    /* background-color: yellow; */
+}
+
+.sidebar__link {
+    display: inline-block;
+    margin: 0 0 0.5rem -1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar__link:hover {
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar__dropdown {
+    background: white;
+    padding-left: 35px;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar__dropdown-link {
+    text-decoration: none;
+}
+
+.sidebar__dropdown-link:hover {
+    font-weight: bold;
+}
+
+.sidebar__caret {
+    transform: rotate(180deg);
+}
+
+.content {
+    /* background-color: var(--backgroundcolor-content); */
+    margin: 0px 0 0 0px;
+    width: 100%;
+    height: calc(100vh - 7%);
+}
+
+.cardHeader {
+    width: 94%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: lightblue;
+    box-shadow: 0px 3px 10px #add8e6;
+    min-height: 100px;
+    max-height: auto;
+    color: black;
+    z-index: 5;
+}
+
+.cardBody {
+    width: 97%;
+    background-color: azure;
+    position: relative;
+    min-height: 100px;
+    left: 10px;
+    height: calc(100vh - 150px);
+    top: -25px;
+    padding-top: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(207, 204, 204);
+}
+
+/* --------------------------------------------
+      Media Query
+-----------------------------------*/
+
+@media screen and (min-width:768px) {
+    .bar {
+        display: none;
+    }
+
+    /* -------------------------------------------------------
+            Elementos del Nav en Media Query min 768px
+      **-------------------------------------------------*/
+    .my__nav {
+        position: relative;
+        width: calc(100% - 200px);
+        height: 10%;
+        margin-left: 200px;
+        background-color: var(--backgroundcolor-navbar);
+        line-height: 55px;
+    }
+
+
+    .span__profile {
+        display: inline-block;
+    }
+
+    .image__profile {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        float: right;
+        margin: 10px 5px 0 0;
+    }
+
+    #collapseProfile {
+        margin-left: calc(100% - 21.8rem);
+        position: fixed;
+        margin-top: -8px;
+        visibility: visible;
+        z-index: 5;
+    }
+
+    .collapse__ul-profile {
+        display: block;
+        width: calc(100% + 3rem);
+        place-items: center;
+        background-color: azure;
+        z-index: 10;
+    }
+
+    .collapse__ul-profile dt a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .collapse__ul-profile a:hover {
+        display: block;
+        font-weight: bold;
+        color: black;
+        background-color: var(--backgroundcolor-navbar);
+    }
+
+    /* ------------------------------------------------------
+      Elementos del sideBar en Media Query 768px
+      ---------------------------------------------*/
+    .sidebar {
+        display: block;
+        position: absolute;
+        width: 200px;
+        background-color: var(--backgroundcolor-sidebar);
+        height: calc(100vh - 0.2rem);
+        top: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        color: white;
+    }
+
+    .header__sidebar div a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .header__sidebar div a:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+    .content {
+        position: relative;
+        /* background-color: var(--backgroundcolor-content); */
+        margin-left: 200px;
+        width: calc(100% - 200px);
+        height: calc(100vh - 8%);
+        padding: 0.5rem 0.2rem 0 0.5rem;
+        z-index: 0;
+        /* para que el collapse del profile quede por encima del contenido */
+    }
+
+    .cardHeader {
+        width: 135%;
+        position: sticky;
+        top: 0px;
+        margin-left: -12.4rem;
+        background-color: lightblue;
+        box-shadow: 0px 3px 10px #add8e6;
+        min-height: 100px;
+        max-height: auto;
+        color: black;
+        z-index: 5;
+    }
+
+    .cardBody {
+        width: 140%;
+        background-color: azure;
+        position: relative;
+        min-height: 100px;
+        height: calc(100vh - 9.5rem);
+        top: -30px;
+        padding-top: 30px;
+        border-radius: 5px;
+        margin-left: -13.5rem;
+        box-shadow: 3px 3px 5px rgb(207, 204, 204);
+    }
+}
+
+@media screen and (min-width:990px) {
+    .cardHeader {
+        width: 120%;
+        position: sticky;
+        top: 0px;
+        margin-left: -11.5rem;
+        background-color: lightblue;
+        box-shadow: 0px 3px 10px #add8e6;
+        min-height: 100px;
+        max-height: auto;
+        color: black;
+        z-index: 5;
+    }
+
+    .cardBody {
+        width: 125%;
+        background-color: azure;
+        position: relative;
+        min-height: 100px;
+        height: calc(100vh - 9.5rem);
+        top: -30px;
+        padding-top: 30px;
+        border-radius: 5px;
+        margin-left: -13.5rem;
+        box-shadow: 3px 3px 5px rgb(207, 204, 204);
+    }
+}

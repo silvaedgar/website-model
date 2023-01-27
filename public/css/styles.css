@@ -1,0 +1,115 @@
+/* -----------------------------------------------------------------------------
+AQUI INICIAN LAS CLASES ORIGINALES
+-----------------------------------------------------------------------------*/
+
+.my-nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.my-nav-link:hover {
+    color: white;
+}
+
+.example-spacer {
+    flex: 8 8 auto;
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+}
+
+/* -------------------------------------------------------
+   Clases propias
+   ----------------------------------------------------*/
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-purple {
+    background-color: purple;
+}
+
+.bg-cyan {
+    background-color: cyan;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-yellow:hover {
+    background-color: rgb(215, 215, 15);
+}
+
+.bg-red:hover {
+    background-color: rgb(235, 102, 102);
+}
+
+.bg-purple:hover {
+    background-color: rgb(215, 84, 215);
+}
+
+.bg-cyan:hover {
+    background-color: rgb(8, 184, 184);
+}
+
+.bg-green:hover {
+    background-color: rgb(102, 233, 61);
+}
+
+.bg-blue:hover {
+    background-color: rgb(102, 102, 235);
+}
+
+/* --------------------------------------------------
+    Elementos Inputs
+    ----------------------------------- */
+
+.form__input {
+    padding-left: 15px;
+    height: 85%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 30px;
+}
+
+.form__input:focus {
+    background: rgb(232, 232, 187);
+    border: 1px solid lightgrey;
+}
+
+.form__input:hover {
+    border: 1px solid blue;
+}
+
+.form__select {
+    padding-left: 15px;
+    height: 85%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    height: 30px;
+}
+
+.form__select:focus {
+    background: rgb(232, 232, 187);
+    border: 1px solid lightgrey;
+}
+
+.form__select:hover {
+    border: 1px solid blue;
+}

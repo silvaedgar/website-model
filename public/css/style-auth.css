@@ -1,0 +1,54 @@
+form div {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form div input {
+    padding-left: 60px;
+    height: 85%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+form div input:focus {
+    background: rgb(232, 232, 187);
+    border: 1px solid lightgrey;
+}
+
+form div input:hover {
+    border: 1px solid blue;
+}
+
+form div i {
+    position: absolute;
+    width: 40px;
+    height: 85%;
+    color: #fff;
+    background: #16a085;
+    border: 1px solid #16a085;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: end;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-auth__button-submit {
+    background: #16a085;
+    border: 1px solid #16a085;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.form-auth__button-submit:hover {
+    background: #12876f;
+    color: black;
+}
+
+.pt-2-5 {
+    padding: 10px 0px 0px 0px;
+}
