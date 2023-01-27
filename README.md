@@ -2,8 +2,8 @@
 Contiene pagina de inicio, donde se da opciones para Registrase e Iniciar Sesion. Al iniciar sesión se despliega un SideBar con las alternativas. WebSite listo para modificarlo y adaptarlo a tus necesidades.
 
 ## Instalacion
-1. Clona desde la carpeta principal el proyecto git clone https://github.com/silvaedgar/model-website-laravel.git
-2. Ingresa a la carpeta creada "model-website-laravel
+1. Clona desde la carpeta principal el proyecto git clone https://github.com/silvaedgar/website-model.git
+2. Ingresa a la carpeta creada "website-model"
 3. npm install
 4. composer install
 5. Verificar configuración de archivo ".env"
