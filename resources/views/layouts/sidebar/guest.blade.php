@@ -5,6 +5,7 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
         </button>
+
         <img class="ms-2 me-3" src="{{asset('image')}}\vesil.png" width="100" height="50" alt="logo">
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav active">
